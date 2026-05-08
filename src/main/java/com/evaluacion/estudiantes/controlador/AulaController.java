@@ -3,7 +3,7 @@ package com.evaluacion.estudiantes.controller;
 import com.evaluacion.estudiantes.service.AulaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
+ 
 @RestController
 @RequestMapping("/aula")
 public class AulaController {
