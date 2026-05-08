@@ -1,12 +1,9 @@
 package com.evaluacion.estudiantes.estructuras;
-
 import com.evaluacion.estudiantes.model.Estudiante;
 import java.util.ArrayList;
 import java.util.List;
-
 public class ListaEstudiantes {
     private Nodo cabeza;
-
     public void insertar(Estudiante e) {
         Nodo nuevo = new Nodo(e);
         if (cabeza == null) {
@@ -18,7 +15,6 @@ public class ListaEstudiantes {
             actual.siguiente = nuevo;
         }
     }
-
     public List<Estudiante> mostrar() {
         List<Estudiante> lista = new ArrayList<>();
         Nodo actual = cabeza;
@@ -28,7 +24,6 @@ public class ListaEstudiantes {
         }
         return lista;
     }
-
     public List<Estudiante> ordenadosAprobados() {
         List<Estudiante> aprobados = new ArrayList<>();
         Nodo actual = cabeza;
@@ -46,7 +41,6 @@ public class ListaEstudiantes {
                 }
         return aprobados;
     }
-
     public Estudiante buscar(String nombre) {
         Nodo actual = cabeza;
         while (actual != null) {
